@@ -1,10 +1,16 @@
 import React from 'react'
-
+import { Toaster } from 'react-hot-toast'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 export default function App() {
   return (
-    <div>
-      <h1 className='text-4xl text-red-700'>Hello World</h1>
-      
-    </div>
+    <>
+      <div>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+        <Toaster />
+      </div>
+    </>
   )
 }
