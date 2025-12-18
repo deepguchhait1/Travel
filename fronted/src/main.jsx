@@ -7,12 +7,12 @@ import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 const queryClient = new QueryClient();
 createRoot(document.getElementById('root')).render(
   <div data-theme="light">
-    <StrictMode>
+    {/* <StrictMode> */}
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <App />
         </BrowserRouter>
       </QueryClientProvider>
-    </StrictMode>
+    {/* </StrictMode> */}
   </div>
 )
